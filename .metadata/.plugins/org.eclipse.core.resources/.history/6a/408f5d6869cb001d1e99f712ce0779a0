@@ -1,0 +1,86 @@
+package com.groupeisi.controller;
+
+import java.io.IOException;
+
+import javax.ejb.EJB;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.groupeisi.entities.Cv;
+import com.groupeisi.entities.Experience;
+import com.groupeisi.entities.Formation;
+
+/**
+ * Servlet implementation class AddExperienceServlet
+ */
+@WebServlet("/AddExperience")
+public class AddExperienceServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	 @EJB
+     private IContactLocal contact_dao;
+     @EJB
+     private ICvLocal person_dao;
+     @EJB
+     private IUserLocal user_dao;
+     @EJB
+     private IExperienceLocal exp_dao;
+     @EJB
+     private IFormationLocal form_dao;
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AddExperienceServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		request.getRequestDispatcher("views/resume/show.jsp").forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		 Cookie ck[]=request.getCookies();
+		 Cv cv=new Cv();
+		 Experience exp=new Experience();
+		int	id=Integer.parseInt(ck[1].getValue());
+		String nom=request.getParameter("nom");
+		String prenom=request.getParameter("prenom");
+		int age=Integer.parseInt(request.getParameter("age"));
+		
+		String datedb=request.getParameter("datedb");
+		String datefn=request.getParameter("datefn");
+		String poste=request.getParameter("poste");
+		String societe=request.getParameter("societe");
+		String ville=request.getParameter("ville");
+		
+		/*cv add*/
+		Cv p=new Cv();
+		p.setNom(nom);
+		p.setPrenom(prenom);
+		p.setAge(age);
+		
+		/**exp pro*/
+		Experience ex=new Experience();
+		ex.setPoste(poste);
+		ex.setSociete(societe);
+		ex.setVille(ville);
+		ex.setDatedb(datedb);
+		ex.setDatefn(datefn);
+		ex.setCv(p);
+		
+		exp_dao.add(ex);
+		response.sendRedirect("Resume");
+	}
+
+}

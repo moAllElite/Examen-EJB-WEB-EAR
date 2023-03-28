@@ -1,0 +1,10 @@
+package com.groupeisi.controller;
+
+import javax.ejb.Local;
+
+import com.groupeisi.entities.Cv;
+
+@Local
+public interface ICvLocal  extends IRepository<Cv>{
+	public Cv getCvByIdUser(int user_id,Cv cv);
+}

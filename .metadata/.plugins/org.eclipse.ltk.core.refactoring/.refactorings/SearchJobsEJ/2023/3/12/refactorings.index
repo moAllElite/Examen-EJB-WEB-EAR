@@ -1,0 +1,6 @@
+1679404092972	Rename type 'Person'
+1679405690382	Rename type 'IExperience'
+1679406573388	Rename type 'PersonImpl'
+1679406585984	Rename type 'IPersonLocal'
+1679406597392	Rename type 'IPersonRemote'
+1679408280166	Rename field 'diplome'

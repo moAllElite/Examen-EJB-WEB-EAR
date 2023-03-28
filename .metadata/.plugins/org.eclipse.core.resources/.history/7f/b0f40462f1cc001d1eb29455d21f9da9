@@ -1,0 +1,55 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	 <!-- our project just needs Font Awesome Solid + Brands -->
+  <link href="ressources/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="ressources/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="ressources/fontawesome/css/solid.css" rel="stylesheet">
+	</head>
+	<body>
+				<!-- Modal popup -->
+				<section class="modal modalWindow" id="popupOne">  
+					<section class="modalWrapper">
+						 	 <form action="Resume" method="post">
+							    <div class="form-group">
+							      <input type="text" required="required" name="societe"/>
+							      <label for="input" class="control-label">Entreprise</label><i class="bar"></i>
+							    </div>
+							      <div class="form-group">
+							      <input required="required" name="poste"></input>
+							      <label for="textfield1" class="control-label" >Poste</label><i class="bar"></i>
+							    </div>
+							    <div class="form-group">
+							      <input required="required" name="ville"></input>
+							      <label for="textfield1" class="control-label" >Ville</label><i class="bar"></i>
+							    </div>
+							     <div class="form-group">
+							      <input type="month" required="required" name="datedb"/>
+							      <label for="input" class="control-label">Date de debut</label><i class="bar"></i>
+							    </div>
+							    <div class="form-group">
+							      <input required="required" type="month" name="datefn"></input>
+							      <label for="textfield1" class="control-label">Date de fin</label><i class="bar"></i>
+							    </div>
+							    
+							</form>
+							<div class="button-container">
+							    <button type="submit" class="button" ><span>Submit</span></button>
+							  </div>
+							
+					</section>
+					<a class="closeBtn ">CLOSE X</a>
+					</section>
+				<section class="modal overlay"></section>
+					<script type="text/javascript" src="ressources/js/popup.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+				
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	</head>
+	<body>
+		<!-- Example Code -->
+    
+	    <div class="row g-3 align-items-center">
+		      <div class="col-auto">
+		        <label for="inputPassword6" class="col-form-label">Entreprise</label>
+		      </div>
+		      <div class="col-auto">
+		        <input type="text"  class="form-control"  aria-describedby="addon-wrapping">
+		      </div>
+		      <div class="col-auto">
+		      <label for="inputPassword6" class="col-form-label">Poste</label>
+		    </div>
+		    <div class="col-auto">
+		      <input type="text"  class="form-control"  aria-describedby="addon-wrapping">
+		    </div>
+	  	</div>
+	</body>
+</html>

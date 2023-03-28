@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="SearchJobsEJ"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-scram-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/transaction/api/main/jboss-transaction-api_1.3_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/hibernate/validator/main/hibernate-validator-6.0.23.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-bearer-1.19.1.Final.jar"/>
+  <path value="C:/Users/MOUHAMED NIANG/Desktop/Mouhamed Niang Examen JEE/SearchJobsWeb/src/main/webapp/WEB-INF/lib/layout-7.2.5.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/jboss/logging/main/jboss-logging-3.4.3.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-x500-cert-acme-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-multipart-provider/main/resteasy-multipart-provider-4.7.7.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-permission-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/servlet/jstl/api/main/taglibs-standard-compat-1.2.6-RC1.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-compat-1.2.6-RC1.jar/meta-inf/c-1_0.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-compat-1.2.6-RC1.jar/meta-inf/fmt-1_0.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-compat-1.2.6-RC1.jar/meta-inf/sql-1_0.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-compat-1.2.6-RC1.jar/meta-inf/x-1_0.tld" project="SearchJobsWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/inject/api/main/jakarta.inject-api-1.0.5.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/xml/rpc/api/main/jboss-jaxrpc-api_1.1_spec-2.0.0.Final.jar"/>
+  <path value="C:/Users/MOUHAMED NIANG/Desktop/Mouhamed Niang Examen JEE/SearchJobsWeb/src/main/webapp/WEB-INF/lib/itextpdf-5.5.13.3.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-password-impl-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/xml/ws/api/main/jboss-jaxws-api_2.3_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-digest-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/servlet/jstl/api/main/taglibs-standard-impl-1.2.6-RC1.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c-1_0-rt.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c-1_1.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fmt-1_0-rt.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fmt.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fn.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/permittedtaglibs.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/scriptfree.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/sql-1_0-rt.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/sql.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/x-1_0-rt.tld" project="SearchJobsWeb"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/x.tld" project="SearchJobsWeb"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-x500-principal-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/annotation/api/main/jboss-annotations-api_1.3_spec-2.0.1.Final.jar"/>
+  <path value="C:/Users/MOUHAMED NIANG/Desktop/Mouhamed Niang Examen JEE/SearchJobsWeb/src/main/webapp/WEB-INF/lib/io-7.2.5.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/security/auth/message/api/main/jboss-jaspi-api_1.1_spec-2.0.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-client-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-basic-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-x500-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/enterprise/api/main/jakarta.enterprise.cdi-api-2.0.2.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-util-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-auth-server-sasl-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/orb/api/main/openjdk-orb-8.1.7.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_4.0_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-auth-util-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/xml/soap/api/main/jboss-saaj-api_1.4_spec-1.0.2.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/jboss/as/controller-client/main/wildfly-controller-client-18.1.2.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/resteasy-jaxb-provider-4.7.7.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/jws/api/main/jsr181-api-1.0-MR1.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/jboss/ejb3/main/jboss-ejb3-ext-api-2.3.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-mechanism-gssapi-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-realm-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/json/api/main/jakarta.json-api-1.1.6.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-auth-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-auth-server-http-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-realm-ldap-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-external-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-auth-server-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/faces/api/main/jboss-jsf-api_2.3_spec-3.1.0.SP01.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-credential-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/persistence/api/main/jakarta.persistence-api-2.2.3.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-credential-store-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-localuser-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-x500-cert-1.19.1.Final.jar"/>
+  <path value="C:/Users/MOUHAMED NIANG/Desktop/Mouhamed Niang Examen JEE/SearchJobsWeb/src/main/webapp/WEB-INF/lib/html2pdf-4.0.5.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-entity-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/interceptor/api/main/jboss-interceptors-api_1.2_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/websocket/api/main/jboss-websocket-api_1.1_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-mechanism-digest-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-gs2-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-cert-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/batch/api/main/jboss-batch-api_1.0_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-mechanism-oauth2-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-anonymous-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-json-util-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-auth-server-deprecated-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/mail/api/main/jakarta.mail-1.6.7.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/common/main/wildfly-common-1.6.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-realm-jdbc-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-realm-token-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/servlet/jsp/api/main/jboss-jsp-api_2.3_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/jboss/dmr/main/jboss-dmr-1.6.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-credential-source-impl-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-ssl-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-audit-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-base-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/servlet/jstl/api/main/taglibs-standard-spec-1.2.6-RC1.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/el/api/main/jboss-el-api_3.0_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/ejb/api/main/jboss-ejb-api_3.2_spec-2.0.0.Final.jar"/>
+  <path value="C:/Users/MOUHAMED NIANG/Desktop/Mouhamed Niang Examen JEE/SearchJobsWeb/src/main/webapp/WEB-INF/lib/lombok.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-mechanism-http-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/picketbox/main/picketbox-5.0.3.Final-redhat-00008.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/security/jacc/api/main/jboss-jacc-api_1.5_spec-2.0.0.Final.jar"/>
+  <path value="C:/Users/MOUHAMED NIANG/Desktop/Mouhamed Niang Examen JEE/SearchJobsWeb/src/main/webapp/WEB-INF/lib/pdf-html-1.0.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/validation/api/main/jakarta.validation-api-2.0.2.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/resource/api/main/jboss-connector-api_1.7_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-encryption-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/wsdl4j/api/main/wsdl4j-1.6.3.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-gssapi-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-keystore-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-digest-1.19.1.Final.jar"/>
+  <path value="C:/Users/MOUHAMED NIANG/Desktop/Mouhamed Niang Examen JEE/SearchJobsWeb/src/main/webapp/WEB-INF/lib/kernel-7.2.5.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-sso-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-security-manager-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-security-manager-action-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-mechanism-scram-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-util-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/picketbox/main/picketbox-infinispan-5.0.3.Final-redhat-00008.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-spnego-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/ws/rs/api/main/jboss-jaxrs-api_2.1_spec-2.0.2.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-otp-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/jms/api/main/jboss-jms-api_2.0_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/enterprise/concurrent/api/main/jboss-concurrency-api_1.0_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-mechanism-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-asn1-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-auth-util-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-provider-util-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-external-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-oauth2-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-digest-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/xml/bind/api/main/jboss-jaxb-api_2.3_spec-2.0.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/activation/api/main/jakarta.activation-1.2.2.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-x500-cert-util-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/javax/management/j2ee/api/main/jboss-j2eemgmt-api_1.1_spec-2.0.0.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/picketbox/main/picketbox-commons-1.0.0.final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-http-form-1.19.1.Final.jar"/>
+  <path value="C:/xsrc/wildfly-26.1.3.Final/modules/system/layers/base/org/wildfly/security/elytron-base/main/wildfly-elytron-sasl-plain-1.19.1.Final.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="batch-verification"/>
+  <el>
+   <linked-el length="13" name="%0" offset="4529" path="%1"/>
+   <linked-el length="17" name="%0" offset="5543" path="%2"/>
+   <linked-el length="17" name="%3" offset="4380" path="%2"/>
+   <linked-el length="14" name="%3" offset="4387" path="%1"/>
+   <linked-el length="22" name="%4" offset="7232" path="%2"/>
+   <linked-el length="18" name="%4" offset="3938" path="%1"/>
+   <linked-el length="15" name="%5" offset="4703" path="%2"/>
+   <linked-el length="12" name="%5" offset="4693" path="%1"/>
+   <linked-el length="16" name="%6" offset="830" path="%2"/>
+   <linked-el length="12" name="%6" offset="3447" path="%1"/>
+   <linked-el length="13" name="%7" offset="5290" path="%1"/>
+   <linked-el length="16" name="%7" offset="2441" path="%2"/>
+   <linked-el length="13" name="%8" offset="1137" path="%2"/>
+   <linked-el length="9" name="%8" offset="3379" path="%1"/>
+   <linked-el length="16" name="%9" offset="7018" path="%10"/>
+   <linked-el length="17" name="%9" offset="8314" path="%2"/>
+   <linked-el length="16" name="%9" offset="8384" path="%2"/>
+   <linked-el length="13" name="%9" offset="3602" path="%1"/>
+   <linked-el length="30" name="%11" offset="3770" path="%1"/>
+   <linked-el length="16" name="%11" offset="6560" path="%2"/>
+   <linked-el length="22" name="%11" offset="7232" path="%2"/>
+   <linked-el length="18" name="%11" offset="3938" path="%1"/>
+   <linked-el length="33" name="%11" offset="6903" path="%2"/>
+   <linked-el length="19" name="%12" offset="2846" path="%2"/>
+   <linked-el length="21" name="%12" offset="2824" path="%2"/>
+   <linked-el length="19" name="%12" offset="5225" path="%1"/>
+   <linked-el length="16" name="%13" offset="2133" path="%2"/>
+   <linked-el length="13" name="%13" offset="5170" path="%1"/>
+   <linked-el length="10" name="%14" offset="4168" path="%1"/>
+   <linked-el length="13" name="%15" offset="1799" path="%2"/>
+   <linked-el length="17" name="%16" offset="4380" path="%2"/>
+   <linked-el length="15" name="%16" offset="4703" path="%2"/>
+   <linked-el length="15" name="%16" offset="4974" path="%2"/>
+   <linked-el length="12" name="%16" offset="4449" path="%1"/>
+   <linked-el length="13" name="%16" offset="4513" path="%1"/>
+   <linked-el length="13" name="%16" offset="4529" path="%1"/>
+   <linked-el length="14" name="%16" offset="4387" path="%1"/>
+   <linked-el length="12" name="%16" offset="4067" path="%2"/>
+   <linked-el length="12" name="%16" offset="4693" path="%1"/>
+   <linked-el length="17" name="%16" offset="5543" path="%2"/>
+   <linked-el length="17" name="%16" offset="5286" path="%2"/>
+   <linked-el length="12" name="%17" offset="534" path="%2"/>
+   <linked-el length="44" name="%17" offset="2185" path="%1"/>
+   <linked-el length="30" name="%18" offset="3770" path="%1"/>
+   <linked-el length="33" name="%18" offset="6903" path="%2"/>
+   <linked-el length="12" name="%19" offset="4067" path="%2"/>
+   <linked-el length="13" name="%20" offset="8075" path="%2"/>
+   <linked-el length="14" name="%20" offset="8008" path="%2"/>
+   <linked-el length="15" name="%21" offset="2310" path="%22"/>
+   <linked-el length="28" name="%21" offset="1541" path="%23"/>
+   <linked-el length="27" name="%21" offset="2097" path="%22"/>
+   <linked-el length="15" name="%21" offset="1683" path="%23"/>
+   <linked-el length="20" name="%24" offset="8605" path="%2"/>
+   <linked-el length="19" name="%24" offset="7313" path="%10"/>
+   <linked-el length="23" name="%24" offset="7236" path="%10"/>
+   <linked-el length="19" name="%24" offset="8679" path="%2"/>
+   <linked-el length="12" name="%25" offset="3392" path="%2"/>
+   <linked-el length="12" name="%25" offset="5652" path="%1"/>
+   <linked-el length="14" name="%26" offset="6331" path="%2"/>
+   <linked-el length="13" name="%26" offset="1137" path="%2"/>
+   <linked-el length="12" name="%26" offset="3392" path="%2"/>
+   <linked-el length="16" name="%26" offset="830" path="%2"/>
+   <linked-el length="9" name="%26" offset="3379" path="%1"/>
+   <linked-el length="12" name="%26" offset="5652" path="%1"/>
+   <linked-el length="14" name="%26" offset="6645" path="%1"/>
+   <linked-el length="12" name="%26" offset="3447" path="%1"/>
+   <linked-el length="12" name="%26" offset="534" path="%2"/>
+   <linked-el length="44" name="%26" offset="2185" path="%1"/>
+   <linked-el length="15" name="%27" offset="4974" path="%2"/>
+   <linked-el length="12" name="%27" offset="4449" path="%1"/>
+   <linked-el length="13" name="%28" offset="5290" path="%1"/>
+   <linked-el length="19" name="%28" offset="2846" path="%2"/>
+   <linked-el length="16" name="%28" offset="2133" path="%2"/>
+   <linked-el length="13" name="%28" offset="5170" path="%1"/>
+   <linked-el length="16" name="%28" offset="2441" path="%2"/>
+   <linked-el length="21" name="%28" offset="2824" path="%2"/>
+   <linked-el length="13" name="%28" offset="1799" path="%2"/>
+   <linked-el length="19" name="%28" offset="5225" path="%1"/>
+   <linked-el length="14" name="%29" offset="6331" path="%2"/>
+   <linked-el length="14" name="%29" offset="6645" path="%1"/>
+   <linked-el length="13" name="%30" offset="4513" path="%1"/>
+   <linked-el length="17" name="%30" offset="5286" path="%2"/>
+   <linked-el length="16" name="%31" offset="6560" path="%2"/>
+   <linked-el length="20" name="%32" offset="8605" path="%2"/>
+   <linked-el length="13" name="%32" offset="8075" path="%2"/>
+   <linked-el length="16" name="%32" offset="7018" path="%10"/>
+   <linked-el length="17" name="%32" offset="8314" path="%2"/>
+   <linked-el length="16" name="%32" offset="8384" path="%2"/>
+   <linked-el length="13" name="%32" offset="3602" path="%1"/>
+   <linked-el length="19" name="%32" offset="7313" path="%10"/>
+   <linked-el length="23" name="%32" offset="7236" path="%10"/>
+   <linked-el length="14" name="%32" offset="8008" path="%2"/>
+   <linked-el length="19" name="%32" offset="8679" path="%2"/>
+   <linked-el length="10" name="%33" offset="5010" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias
+   path="/SearchJobsWeb/src/main/webapp/views/inscription/addCV.jsp" value="%22"/>
+  <alias path="exp.datefn" value="%0"/>
+  <alias path="exp.societe" value="%3"/>
+  <alias path="/SearchJobsWeb/src/main/webapp/views/repostCv/repost.jsp" value="%10"/>
+  <alias path="contact.adresse" value="%4"/>
+  <alias path="exp.poste" value="%5"/>
+  <alias path="cv.prenom" value="%6"/>
+  <alias path="form.annee" value="%7"/>
+  <alias path="cv.nom" value="%8"/>
+  <alias path="user.email" value="%9"/>
+  <alias path="contact" value="%11"/>
+  <alias path="form.niveauEtude" value="%12"/>
+  <alias path="form.ecole" value="%13"/>
+  <alias path="exps" value="%14"/>
+  <alias path="form.id" value="%15"/>
+  <alias path="exp" value="%16"/>
+  <alias
+   path="/SearchJobsWeb/src/main/webapp/views/authenfication/login.jsp" value="%23"/>
+  <alias path="cv.id" value="%17"/>
+  <alias path="contact.telephoneSpecialite" value="%18"/>
+  <alias path="exp.id" value="%19"/>
+  <alias path="user.id" value="%20"/>
+  <alias path="errorMessage" value="%21"/>
+  <alias path="user.password" value="%24"/>
+  <alias path="cv.skills" value="%25"/>
+  <alias path="/SearchJobsWeb/src/main/webapp/views/edit/form.jsp" value="%2"/>
+  <alias path="/SearchJobsWeb/src/main/webapp/views/resume/show.jsp" value="%1"/>
+  <alias path="cv" value="%26"/>
+  <alias path="exp.ville" value="%27"/>
+  <alias path="form" value="%28"/>
+  <alias path="cv.interets" value="%29"/>
+  <alias path="exp.datedb" value="%30"/>
+  <alias path="contact.id" value="%31"/>
+  <alias path="user" value="%32"/>
+  <alias path="forms" value="%33"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsp/jstl/core">
+   <prefix>c</prefix>
+  </uri>
+ </uris>
+</kb-project>

@@ -1,0 +1,124 @@
+package com.groupeisi.controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import javax.ejb.EJB;
+import javax.persistence.NoResultException;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.groupeisi.entities.Contact;
+import com.groupeisi.entities.Cv;
+import com.groupeisi.entities.Experience;
+import com.groupeisi.entities.Formation;
+import com.groupeisi.entities.User;
+import java.util.List;
+
+/**
+ * Servlet implementation class Resume
+ */
+@WebServlet(name = "ResumeServlet", urlPatterns = { "/Resume" })
+public class ResumeServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       @EJB
+       private ICvLocal person_dao;
+       @EJB
+       private IContactLocal contact_dao;
+       @EJB
+       private IExperienceLocal exp_dao;
+       @EJB
+       private IFormationLocal form_dao;
+     
+       @EJB
+       private IUserLocal user_dao;
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ResumeServlet() {
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException ,NoResultException{
+		 Cookie ck[]=request.getCookies();
+		 if(ck==null) {
+			 response.sendRedirect("Home");
+		 }else {
+			 Cv cv=new Cv();
+			Formation formation=new Formation();
+			 Experience exp=new Experience();
+			 //on récupère l'id user depuis la session
+	  		int	id=Integer.parseInt(ck[1].getValue());
+	  	
+	  		int cv_id=person_dao.getCvByUserId(id).getId();
+	  		
+	  		System.out.print(person_dao.getCvByUserId(id));
+	  		int contact_id=person_dao.get(cv_id,cv).getContact().getId();
+	  		int form_id=form_dao.get(cv_id,formation).getCv().getId();
+	  		int exp_id=exp_dao.get(cv_id, exp).getCv().getId();
+	  		User u=new User();
+	  		Contact c=new Contact();
+	  		request.setAttribute("contact", contact_dao.get(contact_id, c));
+			request.setAttribute("cv", person_dao.getCvByUserId(id));
+			request.setAttribute("form", form_dao.get(form_id, formation));
+			request.setAttribute("exps",exp_dao.getExperiencesByCvId(cv_id));
+			request.setAttribute("user", user_dao.get(id, u));
+	  		try {
+	  			if(person_dao.getCvByUserId(id)!=null) {
+	  				RequestDispatcher rd=request.getRequestDispatcher("views/resume/show.jsp");
+	  				rd.forward(request, response);
+	  			} else {
+	  				response.sendRedirect("RepostCv");
+	  			}
+			} catch (NoResultException e) {
+				e.printStackTrace();
+				e.getMessage();
+			}
+		 }
+	}
+	/**
+	 * do Post
+	 */
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		Cookie ck[]=request.getCookies();
+		 Cv cv=new Cv();
+		int	cv_id=Integer.parseInt(ck[2].getValue());
+		String nom=request.getParameter("nom");
+		String prenom=request.getParameter("prenom");
+		
+		String datedb=request.getParameter("datedb");
+		String datefn=request.getParameter("datefn");
+		String poste=request.getParameter("poste");
+		String societe=request.getParameter("societe");
+		String ville=request.getParameter("ville");
+		
+		/*cv add*/
+		Cv p=new Cv();
+		p.setId(cv_id);
+	
+		/**exp pro*/
+		Experience ex=new Experience();	
+		List<Experience> exps = new ArrayList<Experience>();
+		exps.add(ex);
+		ex.setPoste(poste);
+		ex.setSociete(societe);
+		ex.setVille(ville);
+		ex.setDatedb(datedb);
+		ex.setDatefn(datefn);
+		cv.setExperiences(exps);
+		ex.setCv(cv);
+		exp_dao.add(ex);
+		response.sendRedirect("Resume");
+	}
+
+}
