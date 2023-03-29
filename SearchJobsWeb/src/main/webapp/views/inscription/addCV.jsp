@@ -1,22 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>  
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="ISO-8859-1">
-	<title>Inscription</title>
-		<link rel="stylesheet/css" href="ressources/css/resume/popup.css" type="text/css">
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-	 	  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="ressources/css/styleRegister.css">
-		<link rel="stylesheet" href="ressources/css/alert.css">
-		
+<head>
+<meta charset="ISO-8859-1">
+<title>Add an new resume</title>
+ 	  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="ressources/css/styleRegister.css">
+
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="ressources/css/styleRegister.css">
+		<link rel="stylesheet" href="ressources/css/alert.css">	
 	</head>
 	<body>
 		<div class="container">
+    <div class="container">
     <div class="stepwizard">
         <div class="stepwizard-row setup-panel">
         			 
@@ -30,7 +28,7 @@
             </div>
             <div class="stepwizard-step">
                 <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                <p>Expériences professionelles</p>
+                <p>ExpÃ©riences professionelles</p>
             </div>
              <div class="stepwizard-step">
                 <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
@@ -46,24 +44,21 @@
 								<ul><li>  ${errorMessage}</li></ul>
 							</div>
 						</c:if>
-						
-			
-		    <form role="form" action="Inscription" method="post">
-		    	<header>	
-			        <div class="row setup-content" id="step-1">
-			            <div class="col-xs-12">
-			                <div class="col-md-12">
-			                    <h3> Informations personnelles</h3>
+    <form role="form" action="Inscription" method="post">
+        <div class="row setup-content" id="step-1">
+            <div class="col-xs-12">
+                <div class="col-md-12">
+                <h3> Informations personnelles</h3>
 			                    <div class="form-group">
 			                        <label class="control-label">Nom</label>
 			                        <input  maxlength="100" type="text" name="nom" required="required" class="form-control" placeholder="Entrer votre nom"  />
 			                    </div>
 			                    <div class="form-group">
-			                        <label class="control-label">prénom</label>
-			                        <input name="prenom" maxlength="100" type="text" required="required" class="form-control" placeholder="Entrer votre prénom" />
+			                        <label class="control-label">prÃ©nom</label>
+			                        <input name="prenom" maxlength="100" type="text" required="required" class="form-control" placeholder="Entrer votre prÃ©nom" />
 			                    </div>
 			                     <div class="form-group">
-			                        <label class="control-label">Centres d'intérêts</label>
+			                        <label class="control-label">Centres d'intÃ©rÃªts</label>
 			                        <textarea name="interets" maxlength="200" type="text" required="required" class="form-control" placeholder="Football,lutte" ></textarea>
 			                    </div>
 			                   
@@ -75,24 +70,25 @@
 			                        <label class="control-label"> Adresse</label>
 			                        <input name="adresse"maxlength="200" type="text" required="required" class="form-control" placeholder="Enter  Address"  />
 			                    </div>
-			                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="row setup-content" id="step-2">
-			            <div class="col-xs-12">
-			                <div class="col-md-12">
-			                    <h3> Formations</h3>
+			             <a class="btn btn-default prevBtn btn-lg pull-left" href="Home" >Home</a>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="row setup-content" id="step-2">
+            <div class="col-xs-12">
+                <div class="col-md-12">
+                   <h3> Formations</h3>
 			                    <div class="form-group">
 			                        <label class="control-label">Etablissement</label>
 			                        <input name="ecole" maxlength="30" type="text" required="required" class="form-control" placeholder="Enter your phone specialite" />
 			                    </div>
 			                    <div class="form-group">
-			                        <label class="control-label"> Année</label>
+			                        <label class="control-label"> AnnÃ©e</label>
 			                        <input name="annee"maxlength="200" type="month" required="required" class="form-control" placeholder="Enter  Address"  />
 			                    </div>
 			                  <div class="form-group">
-			                  	<label class="control-label " for="education">Niveau d'étude</label>
+			                  	<label class="control-label " for="education">Niveau d'Ã©tude</label>
 									<select id="education"  name="niveauEtude" required="required" class="form-control">
 									  <option value="bac+5">Bac+5 or higher</option>
 									  <option value="bac+4">Bac+4</option>
@@ -101,91 +97,68 @@
 									  <option value="bac+1">Bac+1</option>
 									  <option value="bac">Bac</option>
 									</select>
-			                  	
-			                        
-			                      <!--  <input  maxlength="200" type="text"  class="form-control" placeholder="Enter skill or skills" /> --> 
-			                    </div>
-			                      <div class="form-group">
-			                        <label class="control-label">Compétences</label>
-			                        <textarea name="skills" type="text" class="form-control" placeholder="Enter your skills" required="required" ></textarea>
-			                    </div>
-			                    
-			                    <button class="btn btn-default prevBtn btn-lg pull-left" type="button" >Prev</button>
-			                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="row setup-content" id="step-3">
-			            <div class="col-xs-12">
-			                <div class="col-md-12">
-			                    <h3> Expériences professionnelles</h3>
-			                     
-					          	</div>
-					          </div>
-					     </div>
-					          	
-			                    <div class="form-group">
-			                        <label class="control-label">Nom de l'entreprise</label>
-			                        <input name="societe" maxlength="200" type="text" required="required" class="form-control" placeholder="Enter skill or skills" />
-			                    </div>
-			                    <div class="form-group">
-			                        <label class="control-label">poste</label>
-			                        <input name="poste" class="form-control" placeholder="Enter your role  " required="required" ></input>
-			                       <div class="input-group mb-3">
-										  <div class="input-group-prepend">
-										    <span class="input-group-text" id="basic-addon1" style="font-size: 14px;">Date de début</span>
-				                        <input name="datedb" style="width: 30%;" class="form-control" aria-describedby="basic-addon1" type="month" required="required"></input>
-				                    </div>   
-				                   <div class="input-group mb-3">
-										  <div class="input-group-prepend">
-										    <label class="input-group-text" id="basic-addon2" style="font-size: 14px;">Date de fin</label>
-				                       
-				                        <input name="datefn" class="form-control"  style="width: 30%;"  aria-describedby="basic-addon2" type="month" required="required" ></input>
-				                    </div>
-				                    </div>
-				                 <div class="form-group">
-				                    <label class="control-label">Ville</label>
-			                        <input  name="ville" type="text" class="form-control" required="required"/>
-			                    </div>
-			                    <button class="btn btn-default prevBtn btn-lg pull-left mt-4" type="button" >Prev</button>
-			                    
-			                    <button class="btn btn-primary nextBtn btn-lg pull-right mt-4" type="button" >Next</button>
-			                </div>
-			            </div>
-			        </div>
-			        <div class="row setup-content" id="step-4">
-			        <div class="col-xs-12">
-			            <div class="col-md-12">
-			                    <h3> Identifiants </h3>
-			                   <div class="form-group">
-			                        <label class="control-label">Email</label>
-			                        <input name="email" maxlength="200" type="email" required="required" class="form-control" placeholder="Enter email" />
-			                    </div>
-			                    <div class="form-group">
-			                        <label class="control-label">Password</label>
-			                        <input name="password" class="form-control" placeholder="Enter your password" type="password"	required="required" />
-			                    </div> 
-			                    <button class="btn btn-default prevBtn btn-lg pull-left" type="button" >Prev</button>
-			                    <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
-			                </div>
-			            </div>
-			        </div>
-			    
-		    </form>
-		    </div>
-		    
-	
+						</div>
+					
+                    <button class="btn btn-default prevBtn btn-lg pull-left" type="button" >Prev</button>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="row setup-content" id="step-3">
+            <div class="col-xs-12">
+                <div class="col-md-12">
+                    <h3> Experiences professionnelles</h3>
+                    <div class="form-group">
+                        <label class="control-label">Nom de l'entreprise</label>
+                        <input name="societe" maxlength="200" type="text" required="required" class="form-control" placeholder="Enter skill or skills" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">poste</label>
+                        <input name="poste" class="form-control" placeholder="Enter your role  " required="required" ></input>
+                        <div class="input-group mb-3">
+                           <span class="input-group-text">Date de dÃ©but</span>
+	                        <input name="datedb" class="form-control" placeholder="Enter your debut date  "  type="month" required="required"></input>
+	                       <span class="input-group-text">Date fin</span>
+	                        <input name="datefn" class="form-control"  type="month" required="required" ></input>
+	                    </div>
+	                    <label class="control-label">Ville</label>
+                        <input  name="ville" type="text" class="form-control" required="required"/>
+                    </div>
+                    <button class="btn btn-default prevBtn btn-lg pull-left" type="button" >Prev</button>
+                    <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="row setup-content" id="step-4">
+        <div class="col-xs-12">
+            <div class="col-md-12">
+                    <h3> Identifiants</h3>
+                 <div class="form-group">
+              
+                        <label class="control-label">Email</label>
+                        <input name="email" maxlength="200" type="email"    class="form-control" placeholder="email" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <input name="password"  type="password"   class="form-control" required="required"  placeholder="password" />
+                    </div> 
+                   
+                    <button class="btn btn-default prevBtn btn-lg pull-left" type="button" >Prev</button>
+                    <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
 
 		
-		
-				<!-- JQUERY STEP -->
-				<!-- partial -->
-		  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
-		<script  src="ressources/js/register.js"></script>
-		
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>	
+
+		<!-- JQUERY STEP -->
+		<!-- partial -->
+		<script type="text/javascript" src="ressources/js/alert.js"></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script><script  src="ressources/js/register.js"></script>
+
 </body>
 </html>
 	
