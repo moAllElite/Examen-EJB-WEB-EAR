@@ -49,7 +49,7 @@ public class DeleteCvServlet extends HttpServlet {
 		 Cv cv=new Cv();
 		Formation formation=new Formation();
 		 Experience exp=new Experience();
-		 //on récupère l'id user depuis la session
+		 //on récupère l'id user depuis la session qui sous format liste=[id_session,user_id,email]
   		int	user_id=Integer.parseInt(ck[1].getValue());
   		User u=new User();
   		int contact_id=cv_dao.get(user_id,cv).getContact().getId();
