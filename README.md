@@ -44,14 +44,24 @@ What type of user do you wish to add?
  b) Application User (application-users.properties)
  (a):
 ````
-
 Run `a`
-
 ````
 Enter the details of the new user to add.
 Using realm 'ManagementRealm' as discovered from the existing property files.
 Username :
 ````
+### Entrer le nom d'utilisateur
+
+````
+
+Password recommendations are listed below. To modify these restrictions edit the add-user.properties configuration file.
+ - The password should be different from the username
+ - The password should not be one of the following restricted values {root, admin, administrator}
+ - The password should contain at least 8 characters, 1 alphabetic character(s), 1 digit(s), 1 non-alphanumeric symbol(s)
+Password :
+````
+### Entrer le mot de passe et confirmer après
+
 ---
 # Téléchargement Jar
 **[iText pdf](https://itextpdf.com/products/itext-7/itext-7-core)**
