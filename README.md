@@ -1,22 +1,22 @@
 Examen-EJB-WEB-EAR
 ==============
 
-### Opération de base  sur un cv CRUD et reporting avec l'api iText
+Ce projet permet Opération de base  sur un cv CRUD et génération en format pdf de cv (reporting)  avec l'api iText
 
 ---
-# Installation du Data source avec wildfly 26.1.3 Final
+# Configuration du projet
 
 ![wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
 
 
-#### Ajout du mysql-connector dans le répertoire wildfly\modules\system\layers\base\com\mysql\main
+Ajout du mysql-connector dans le répertoire wildfly\modules\system\layers\base\com\mysql\main
 
 https://dev.mysql.com/downloads/connector/j/
 
-### Création de la base de donnée depuis mysql 
-searchjob
+Vous devez  crééer de la base de donnée depuis mysql searchjob
 
 ### Répertoire wildfly/standalone/configuration/standalone.xml
+Vous ajoutez la configuration suivant de ce répertoire ci-dessus 
 
 ````
 <datasource jta="true" jndi-name="java:/MySqlDS" pool-name="MySqlDS" statistics-enabled="true">
@@ -60,7 +60,7 @@ Password recommendations are listed below. To modify these restrictions edit the
  - The password should contain at least 8 characters, 1 alphabetic character(s), 1 digit(s), 1 non-alphanumeric symbol(s)
 Password :
 ````
-### Entrer le mot de passe et confirmer après
+Entrer le mot de passe et confirmer après
 
 ---
 # Téléchargement Jar
@@ -83,7 +83,7 @@ Document doc=new Document();
 Font headFont=new Font(Font.FontFamily.TIMES_ROMAN,14,Font.BOLD,BaseColor.BLACK);
 ````
 
-````
+````java
 String nom=resume.getNom().toUpperCase();
 String prenom=resume.getPrenom().toUpperCase();
 String skills=resume.getSkills().toUpperCase();
@@ -92,13 +92,13 @@ exp.setCv(resume);
 ````
 ### Ajout des paragraphes dans le document
 
-````
+````java
 Paragraph fullName=new Paragraph(nom+"  "+prenom,titleFont);
 doc.addTitle(prenom+" "+nom);
 ````
 -----
 
-## Démarrage du projet 
+## Usage 
 Run `http://localhost:8080/SearchJobs`
 ````
 <!-- https://mavenlibs.com/maven/dependency/com.itextpdf/itextpdf -->
