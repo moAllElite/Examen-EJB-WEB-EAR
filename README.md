@@ -29,3 +29,8 @@ searchjob
     </validation>
 </datasource>
 ````
+# Téléchargement Jar
+###iText pdf
+https://mavenlibs.com/jar/file/com.itextpdf/itextpdf
+### layout
+https://mavenlibs.com/jar/file/com.itextpdf/layout
