@@ -3,7 +3,7 @@ Opération de base  sur un cv CRUD et reporting avec l'api itext
 
 ---
 # Installation du Data source avec wildfly 26.1.3 Final
-[[wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
+[![wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
 
 ### **[Télécharger wildly] (https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)**
 
@@ -35,7 +35,7 @@ searchjob
 # Téléchargement Jar
 ### iText pdf
 https://mavenlibs.com/jar/file/com.itextpdf/itextpdf
-
+---
 ## Création d'un utilisateur 
 #### Run `call wildfly/bin/add-user.bat`
 ````
@@ -53,7 +53,7 @@ Using realm 'ManagementRealm' as discovered from the existing property files.
 Username :
 ````
 ---
-## Démaarrage du projet 
+## Démarrage du projet 
 Run `http://localhost:8080/SearchJobs`
 ````
 <!-- https://mavenlibs.com/maven/dependency/com.itextpdf/itextpdf -->
