@@ -3,6 +3,7 @@ Opération de base  sur un cv CRUD et reporting avec l'api itext
 
 ---
 # Installation du Data source avec wildfly 26.1.3 Final
+![build](https://github.com/buttons/github-buttons/workflows/build/badge.svg)
 [![wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
 
 ### **[Télécharger wildly] (https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)**
