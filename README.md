@@ -1,8 +1,9 @@
 # Examen-EJB-WEB-EAR
 Opération de base  sur un cv CRUD et reporting avec l'api itext
-==============
+
+---
 # Installation du Data source avec wildfly 26.1.3 Final
-[![wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
+[[wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
 
 ### **[Télécharger wildly] (https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)**
 
@@ -30,7 +31,7 @@ searchjob
     </validation>
 </datasource>
 ````
---------
+
 # Téléchargement Jar
 ### iText pdf
 https://mavenlibs.com/jar/file/com.itextpdf/itextpdf
@@ -51,6 +52,7 @@ Enter the details of the new user to add.
 Using realm 'ManagementRealm' as discovered from the existing property files.
 Username :
 ````
+---
 ## Démaarrage du projet 
 Run `http://localhost:8080/SearchJobs`
 ````
