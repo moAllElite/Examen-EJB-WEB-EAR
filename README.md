@@ -30,7 +30,23 @@ searchjob
 </datasource>
 ````
 # Téléchargement Jar
-###iText pdf
+### iText pdf
 https://mavenlibs.com/jar/file/com.itextpdf/itextpdf
+````
+<!-- https://mavenlibs.com/maven/dependency/com.itextpdf/itextpdf -->
+<dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itextpdf</artifactId>
+    <version>5.5.13.3</version>
+</dependency>
+````
 ### layout
 https://mavenlibs.com/jar/file/com.itextpdf/layout
+````
+<!-- https://mavenlibs.com/maven/dependency/com.itextpdf/layout -->
+<dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>layout</artifactId>
+    <version>7.2.5</version>
+</dependency>
+````
