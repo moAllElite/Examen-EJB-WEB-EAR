@@ -6,7 +6,7 @@ Ce projet permet la gestion d' un cv CRUD et génération en format pdf de cv (r
 ---
 # Configuration du projet
 
-![wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
+[wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
 
 
 Ajout du mysql-connector dans le répertoire wildfly\modules\system\layers\base\com\mysql\main
@@ -101,7 +101,7 @@ doc.addTitle(prenom+" "+nom);
 -----
 
 ## Usage 
-Run `http://localhost:8080/SearchJobs`
+
 ````
 <!-- https://mavenlibs.com/maven/dependency/com.itextpdf/itextpdf -->
 <dependency>
@@ -120,4 +120,6 @@ https://mavenlibs.com/jar/file/com.itextpdf/layout
     <version>7.2.5</version>
 </dependency>
 ````
+En fin, lancez votre nativation puis tapez cette url
+Run `http://localhost:8080/SearchJobs`
 -------
