@@ -33,6 +33,24 @@ searchjob
 ### iText pdf
 https://mavenlibs.com/jar/file/com.itextpdf/itextpdf
 ````
+##Création d'un utilisateur 
+#### Run `call wildfly/bin/add-user.bat`
+````
+What type of user do you wish to add?
+ a) Management User (mgmt-users.properties)
+ b) Application User (application-users.properties)
+ (a):
+````
+
+Run `a`
+
+````
+Enter the details of the new user to add.
+Using realm 'ManagementRealm' as discovered from the existing property files.
+Username :
+````
+## Démaarrage du projet 
+Run `http://localhost:8080/SearchJobs`
 <!-- https://mavenlibs.com/maven/dependency/com.itextpdf/itextpdf -->
 <dependency>
     <groupId>com.itextpdf</groupId>
