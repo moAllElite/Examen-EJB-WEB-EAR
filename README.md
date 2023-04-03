@@ -16,6 +16,8 @@ https://dev.mysql.com/downloads/connector/j/
 Vous devez  crééer de la base de donnée depuis mysql searchjob
 
 ### Répertoire wildfly/standalone/configuration/standalone.xml
+
+
 Vous ajoutez la configuration suivant de ce répertoire ci-dessus 
 
 ````
