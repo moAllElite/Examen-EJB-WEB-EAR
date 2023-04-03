@@ -1,7 +1,7 @@
 Examen-EJB-WEB-EAR
 ==============
 
-Ce projet permet Opération de base  sur un cv CRUD et génération en format pdf de cv (reporting)  avec l'api iText
+Ce projet permet la gestion d' un cv CRUD et génération en format pdf de cv (reporting)  avec l'api iText
 
 ---
 # Configuration du projet
