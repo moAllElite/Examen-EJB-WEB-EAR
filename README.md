@@ -1,18 +1,18 @@
 # Examen-EJB-WEB-EAR
 Opération de base  sur un cv CRUD et reporting avec l'api itext
 
-#Installation du Data source avec wildfly 26.1.3 Final
+# Installation du Data source avec wildfly 26.1.3 Final
 
-###Télécharger wildly https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/
+### Télécharger wildly https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/
 
-###Ajout du mysql-connector dans le répertoire wildfly\modules\system\layers\base\com\mysql\main
+### Ajout du mysql-connector dans le répertoire wildfly\modules\system\layers\base\com\mysql\main
 
 https://dev.mysql.com/downloads/connector/j/
 
-###Création de la base de donnée depuis mysql 
+### Création de la base de donnée depuis mysql 
 searchjob
 
-###Répertoire wildfly/standalone/configuration/standalone.xml
+### Répertoire wildfly/standalone/configuration/standalone.xml
 
 ````
 <datasource jta="true" jndi-name="java:/MySqlDS" pool-name="MySqlDS" statistics-enabled="true">
