@@ -5,7 +5,7 @@ Opération de base  sur un cv CRUD et reporting avec l'api itext
 
 ### Télécharger wildly https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/
 
-### Ajout du mysql-connector dans le répertoire wildfly\modules\system\layers\base\com\mysql\main
+#### Ajout du mysql-connector dans le répertoire wildfly\modules\system\layers\base\com\mysql\main
 
 https://dev.mysql.com/downloads/connector/j/
 
