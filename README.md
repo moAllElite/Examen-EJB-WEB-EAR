@@ -1,12 +1,13 @@
-# Examen-EJB-WEB-EAR
-Opération de base  sur un cv CRUD et reporting avec l'api itext
+Examen-EJB-WEB-EAR
+==============
+
+### Opération de base  sur un cv CRUD et reporting avec l'api iText
 
 ---
 # Installation du Data source avec wildfly 26.1.3 Final
-![build](https://github.com/buttons/github-buttons/workflows/build/badge.svg)
-[![wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
 
-### **[Télécharger wildly] (https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)**
+![wildfly](https://www.wildfly.org/news/2023/01/18/WildFly2613-Released/)
+
 
 #### Ajout du mysql-connector dans le répertoire wildfly\modules\system\layers\base\com\mysql\main
 
@@ -33,10 +34,8 @@ searchjob
 </datasource>
 ````
 
-# Téléchargement Jar
-### iText pdf
-https://mavenlibs.com/jar/file/com.itextpdf/itextpdf
----
+
+
 ## Création d'un utilisateur 
 #### Run `call wildfly/bin/add-user.bat`
 ````
@@ -54,6 +53,41 @@ Using realm 'ManagementRealm' as discovered from the existing property files.
 Username :
 ````
 ---
+# Téléchargement Jar
+**[iText pdf](https://itextpdf.com/products/itext-7/itext-7-core)**
+
+**[iText jar](https://mavenlibs.com/jar/file/com.itextpdf/itextpdf)**
+
+---
+
+## Configutation iText
+### Création du document
+```` java
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.Paragraph;
+
+response.setContentType("application/pdf");
+Document doc=new Document();
+Font headFont=new Font(Font.FontFamily.TIMES_ROMAN,14,Font.BOLD,BaseColor.BLACK);
+````
+
+````
+String nom=resume.getNom().toUpperCase();
+String prenom=resume.getPrenom().toUpperCase();
+String skills=resume.getSkills().toUpperCase();
+String interets=resume.getInterets().substring(0,1).toUpperCase()+resume.getInterets().substring(1);
+exp.setCv(resume);
+````
+### Ajout des paragraphes dans le document
+
+````
+Paragraph fullName=new Paragraph(nom+"  "+prenom,titleFont);
+doc.addTitle(prenom+" "+nom);
+````
+-----
+
 ## Démarrage du projet 
 Run `http://localhost:8080/SearchJobs`
 ````
@@ -63,7 +97,7 @@ Run `http://localhost:8080/SearchJobs`
     <artifactId>itextpdf</artifactId>
     <version>5.5.13.3</version>
 </dependency>
-```
+````
 ### layout
 https://mavenlibs.com/jar/file/com.itextpdf/layout
 ````
@@ -74,3 +108,4 @@ https://mavenlibs.com/jar/file/com.itextpdf/layout
     <version>7.2.5</version>
 </dependency>
 ````
+-------
